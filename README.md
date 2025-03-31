@@ -16,4 +16,5 @@ Start the Development Server
 
 npm run dev
 
-The application will run on http://localhost:3000.
+The application will run on http://localhost:3000. or
+The application will run on https://pinggyfrontend-omrluewk1-lslakshman2024-gmailcoms-projects.vercel.app/.

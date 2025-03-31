@@ -17,7 +17,9 @@ export const PostList = () => {
 
   const fetchPosts = async () => {
     try {
-      const response = await fetch("http://localhost:8080/list", {
+      const path = "https://pinggybackend-42gaalhty-lslakshman2024-gmailcoms-projects.vercel.app/";
+      const lpath = "http://localhost:8080/";
+      const response = await fetch(path+"list", {
         method:"GET",
         headers: {
           "Content-Type": "application/json",

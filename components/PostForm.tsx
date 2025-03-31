@@ -27,8 +27,9 @@ export const PostForm: React.FC<PostFormModalProps> = ({ isOpen, onClose, onPost
         console.log(postTitle + "  " + postBody + "   " + authCode);
         console.log(JSON.stringify({ title: postTitle, body: postBody }));
         try {
-
-            const response = await fetch("http://localhost:8080/post", {
+            const path = "https://pinggybackend-42gaalhty-lslakshman2024-gmailcoms-projects.vercel.app/";
+            const lpath = "http://localhost:8080/";
+            const response = await fetch(path + "post", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
