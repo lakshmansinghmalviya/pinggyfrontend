@@ -27,9 +27,10 @@ export const PostForm: React.FC<PostFormModalProps> = ({ isOpen, onClose, onPost
         console.log(postTitle + "  " + postBody + "   " + authCode);
         console.log(JSON.stringify({ title: postTitle, body: postBody }));
         try {
-            const path = "https://pinggybackend-42gaalhty-lslakshman2024-gmailcoms-projects.vercel.app/";
-            const lpath = "http://localhost:8080/";
-            const response = await fetch(path + "post", {
+            // const path = "https://pinggybackend-42gaalhty-lslakshman2024-gmailcoms-projects.vercel.app/";
+            // const lpath = "http://localhost:8080/";
+            const lpath = "https://8080-idx-pinggybackend-1743488649757.cluster-a3grjzek65cxex762e4mwrzl46.cloudworkstations.dev/";
+            const response = await fetch(lpath + "post", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

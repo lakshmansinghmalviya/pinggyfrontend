@@ -17,9 +17,10 @@ export const PostList = () => {
 
   const fetchPosts = async () => {
     try {
-      const path = "https://pinggybackend-42gaalhty-lslakshman2024-gmailcoms-projects.vercel.app/";
-      const lpath = "http://localhost:8080/";
-      const response = await fetch(path+"list", {
+      // const path = "https://pinggybackend-42gaalhty-lslakshman2024-gmailcoms-projects.vercel.app/";
+      // const lpath = "http://localhost:8080/";
+      const lpath = "https://8080-idx-pinggybackend-1743488649757.cluster-a3grjzek65cxex762e4mwrzl46.cloudworkstations.dev/";
+      const response = await fetch(lpath+"list", {
         method:"GET",
         headers: {
           "Content-Type": "application/json",
